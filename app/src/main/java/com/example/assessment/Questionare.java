@@ -99,10 +99,7 @@ public class Questionare extends AppCompatActivity {
         Intent in = new Intent(getApplicationContext(),Result.class);
         startActivity(in);
     }
-    radioGroup.clearCheck();
-    });
-
-        quitBtn.setOnClickListener(v -> {
+            if(counter==10){
             String data1 = name_msg.getText().toString();
             String data2 = roll_msg.getText().toString();
             String data3 = Integer.toString(counter);
@@ -114,6 +111,14 @@ public class Questionare extends AppCompatActivity {
             intent1.putExtra("Counter++",data3);
             intent1.putExtra("Correct++",data4);
             intent1.putExtra("Wrong++",data5);
+            startActivity(intent1);}
+            else
+            {}
+    radioGroup.clearCheck();
+    });
+
+        quitBtn.setOnClickListener(v -> {
+            Intent intent1 =new Intent(getApplicationContext(),MainActivity.class);
             startActivity(intent1);
         });
 }
