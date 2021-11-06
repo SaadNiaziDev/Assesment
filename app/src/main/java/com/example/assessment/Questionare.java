@@ -103,9 +103,11 @@ public class Questionare extends AppCompatActivity {
     });
 
         quitBtn.setOnClickListener(v -> {
+            String data1 = name_msg.getText().toString();
+            String data2 = roll_msg.getText().toString();
             Intent intent1 =new Intent(getApplicationContext(),Result.class);
-            intent1.putExtra("Name",name_msg.getText().toString());
-            intent1.putExtra("Roll#",roll_msg.getText().toString());
+            intent1.putExtra("Name#",data1);
+            intent1.putExtra("Roll#",data2);
             startActivity(intent1);
         });
 }
