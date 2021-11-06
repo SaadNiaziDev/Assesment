@@ -28,6 +28,15 @@ public class Questionare extends AppCompatActivity {
         String str2 = intent.getStringExtra("RollNum");
         roll_msg.setText(str2);
 
+        radioGroup=(RadioGroup)findViewById(R.id.radioGroup);
+        r1=(RadioButton)findViewById(R.id.radioButton);
+        r2=(RadioButton)findViewById(R.id.radioButton2);
+        r3=(RadioButton)findViewById(R.id.radioButton3);
+        r4=(RadioButton)findViewById(R.id.radioButton4);
+        r1.setText(options[0]);
+        r2.setText(options[1]);
+        r3.setText(options[2]);
+        r4.setText(options[3]);
 
     }
 }
