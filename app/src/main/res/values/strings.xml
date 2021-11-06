@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Assessment</string>
+    <string name="welcome_to_assessment">Welcome to Assessment</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_roll_no">Enter Your Roll No.</string>
+    <string name="button">Button</string>
+    <string name="proceed">Proceed</string>
+    <string name="result">Result</string>
+</resources>

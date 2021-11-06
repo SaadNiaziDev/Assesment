@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0BDB9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="232dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/enter_your_name"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="233dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="124dp"
+        android:text="@string/enter_your_roll_no"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/white"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:labelFor="@id/nameInput"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/rollNumberInput"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="128dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:labelFor="@id/rollNumberInput"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="375dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/welcome_to_assessment"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/proceedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="@string/proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
