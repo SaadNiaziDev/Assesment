@@ -36,6 +36,7 @@ public class Result extends AppCompatActivity {
         String text5 = GET.getStringExtra("Wrong++");
         wrongField.setText(text5);
 
+        Questionare.counter=0;
         Questionare.correct=0;
         Questionare.wrong=0;
 
