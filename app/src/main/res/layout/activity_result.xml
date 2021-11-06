@@ -8,6 +8,18 @@
     tools:context=".Result">
 
     <TextView
+        android:id="@+id/rollText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/attemptedText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,31 +57,37 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/attemptedInput"
+        android:id="@+id/correctInput"
         android:layout_width="73dp"
         android:layout_height="41dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/correctText"
+        app:layout_constraintTop_toTopOf="@+id/correctText" />
 
     <TextView
         android:id="@+id/wrongInput"
         android:layout_width="73dp"
         android:layout_height="41dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correctInput" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/wrongText"
+        app:layout_constraintTop_toTopOf="@+id/wrongText" />
 
     <TextView
-        android:id="@+id/correctInput"
+        android:id="@+id/attemptedInput"
         android:layout_width="73dp"
         android:layout_height="41dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attemptedInput" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/attemptedText"
+        app:layout_constraintTop_toTopOf="@+id/attemptedText" />
 
     <TextView
         android:id="@+id/resultTitle"
@@ -108,5 +126,17 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
