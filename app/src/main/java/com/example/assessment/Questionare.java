@@ -7,13 +7,38 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.content.Intent;
+import android.widget.Toast;
 
 public class Questionare extends AppCompatActivity {
     RadioGroup radioGroup;
     RadioButton r1,r2,r3,r4;
-    String questions[] = {};
-    String anwsers[]={};
-    String options[]={};
+    String questions[] = {
+            "Which method can be defined only once in a program?",
+            "Which of these is not a bitwise operator?",
+            "Which keyword is used by method to refer to the object that invoked it?",
+            "Which of these keywords is used to define interfaces in Java?",
+            "Which of these access specifiers can be used for an interface?",
+            "Which of the following is correct way of importing an entire package ‘pkg’?",
+            "What is the return type of Constructors?",
+            "Which of the following package stores all the standard java classes?",
+            "Which of these method of class String is used to compare two String objects for their equality?",
+            "An expression involving byte, int, & literal numbers is promoted to which of these?",
+    };
+    String anwsers[]={
+            "main method","<=","this","interface","public","import pkg.*","None of the mentioned","java","equals()","int"
+    };
+    String options[]={
+            "finalize method","main method","static method","private method",
+            "&","&=","|=","<=",
+            "import","this","catch","abstract",
+            "Interface","interface","intf","Intf",
+            "public","protected","private","All of the mentioned",
+            "Import pkg.","import pkg.*","Import pkg.*","import pkg.",
+            "int","float","void","None of the mentioned",
+            "lang","java","util","java.packages",
+            "equals()","Equals()","isequal()","Isequal()",
+            "int","long","byte","float"
+    };
     public static int marks=0,correct=0,wrong=0;
     TextView name_msg,roll_msg;
     @Override
@@ -38,5 +63,9 @@ public class Questionare extends AppCompatActivity {
         r3.setText(options[2]);
         r4.setText(options[3]);
 
+        if(radioGroup.getCheckedRadioButtonId()==-1){
+            Toast.makeText(getApplicationContext(), "Please select one choice", Toast.LENGTH_SHORT).show();
+            return;
+        }
     }
 }
