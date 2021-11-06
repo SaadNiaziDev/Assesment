@@ -9,4 +9,10 @@
     <string name="questionBox">TextView</string>
     <string name="next">Next</string>
     <string name="quit">QUIT</string>
+    <string name="resultTitle">RESULT</string>
+    <string name="wrongAnwsers">Wrong Anwsers</string>
+    <string name="correctAnwsers">Correct Anwsers</string>
+    <string name="questionAttempted">Question Attempted</string>
+    <string name="shareBTN">Share</string>
+    <string name="quitBTN">Quit</string>
 </resources>
