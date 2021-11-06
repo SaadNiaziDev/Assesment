@@ -18,29 +18,37 @@ public class Result extends AppCompatActivity {
 
         _name=findViewById(R.id.nameText);
         _rollNum=findViewById(R.id.rollText);
-        Intent GET = getIntent();
-        String text1 = GET.getStringExtra("Name#");
-        _name.setText(text1);
-        String text2 = GET.getStringExtra("Roll#");
-        _rollNum.setText(text2);
         quitButton=findViewById(R.id.quitButton);
         shareButton=findViewById(R.id.shareBtn);
         attemptedField=findViewById(R.id.attemptedInput);
         wrongField=findViewById(R.id.wrongInput);
         correctField=findViewById(R.id.correctInput);
 
-        StringBuffer str = new StringBuffer();
-        str.append(Questionare.counter);
+        Intent GET = getIntent();
+        String text1 = GET.getStringExtra("Name#");
+        _name.setText(text1);
+        String text2 = GET.getStringExtra("Roll#");
+        _rollNum.setText(text2);
+        String text3 = GET.getStringExtra("Counter++");
+        attemptedField.setText(text3);
+        String text4 = GET.getStringExtra("Correct++");
+        correctField.setText(text4);
+        String text5 = GET.getStringExtra("Wrong++");
+        wrongField.setText(text5);
 
-        StringBuffer str2 = new StringBuffer();
-        str2.append(Questionare.correct);
 
-        StringBuffer str3 = new StringBuffer();
-        str3.append(Questionare.wrong);
-
-        attemptedField.setText(str);
-        correctField.setText(str2);
-        wrongField.setText(str3);
+//        StringBuffer str = new StringBuffer();
+//        str.append(Questionare.counter);
+//
+//        StringBuffer str2 = new StringBuffer();
+//        str2.append(Questionare.correct);
+//
+//        StringBuffer str3 = new StringBuffer();
+//        str3.append(Questionare.wrong);
+//
+//        attemptedField.setText(str);
+//        correctField.setText(str2);
+//        wrongField.setText(str3);
 
         Questionare.correct=0;
         Questionare.wrong=0;
