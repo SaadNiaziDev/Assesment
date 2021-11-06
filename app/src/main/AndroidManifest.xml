@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assessment">
         <activity
+            android:name=".Result"
+            android:exported="false" />
+        <activity
             android:name=".Questionare"
             android:exported="false" />
         <activity
