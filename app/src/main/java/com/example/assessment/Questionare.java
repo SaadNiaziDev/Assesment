@@ -38,16 +38,16 @@ public class Questionare extends AppCompatActivity {
             "Nit-eeyah",
             "None of these",
     };
-    String[] options ={"finalize method","main method","static method","private method",
-            "&","&=","|=","<=",
-            "import","this","catch","abstract",
-            "Interface","interface","intf","Intf",
-            "public","protected","private","All of the mentioned",
-            "Import pkg.","import pkg.*","Import pkg.*","import pkg.",
-            "int","float","void","None of the mentioned",
-            "lang","java","util","java.packages",
-            "equals()","Equals()","isequal()","Isequal()",
-            "int","long","byte","float"
+    String[] options ={"غ خ","ع ح","أ ہ","ت د ط",
+            "ن","ج ش ی","ت د ط","غ خ",
+            "Base of tongue near Uvula","Portion of tongue near its base touching roof of mouth","Bottom of the tongue","Sides of the tongue",
+            "Lahatiyah","Halqiyah", "Shajariyah-Haafiyah", "Ghunna",
+            "ف","ر ","ن ","ل ",
+            "م ن","ص ز س","ظ  ذ  ث","ت د ط",
+            "When inner part of the both lips touch each other", "When Outer part of both lips touch each other" , "When noise vibrates while emitting letters", "None of these",
+            "16", "17", "18", "19",
+            "Lahatiyah", "Nit-eeyah", "Shajariyah-Haafiyah", "Halqiyah",
+            "Shrill sound", "No Sound", "Grave sound" , "None of these"
     };
     public static int marks=0,correct=0,wrong=0;
     TextView name_msg,roll_msg;

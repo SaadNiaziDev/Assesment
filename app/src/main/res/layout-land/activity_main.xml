@@ -98,7 +98,19 @@
         android:text="@string/proceed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.331"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/rewiseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:text="@string/revise"
+        app:layout_constraintBottom_toBottomOf="@+id/proceedBtn"
+        app:layout_constraintStart_toStartOf="@+id/rollNumberInput"
+        app:layout_constraintTop_toTopOf="@+id/proceedBtn"
         tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
