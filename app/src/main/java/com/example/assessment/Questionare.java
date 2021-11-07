@@ -119,6 +119,9 @@ public class Questionare extends AppCompatActivity {
 
         quitBtn.setOnClickListener(v -> {
             Intent intent1 =new Intent(getApplicationContext(),MainActivity.class);
+            counter=0;
+            wrong=0;
+            correct=0;
             startActivity(intent1);
         });
 }
