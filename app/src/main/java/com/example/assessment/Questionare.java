@@ -14,18 +14,29 @@ public class Questionare extends AppCompatActivity {
     TextView questionBox;
     RadioGroup radioGroup;
     RadioButton r1,r2,r3,r4;
-    String[] questions = {"Which method can be defined only once in a program?",
-            "Which of these is not a bitwise operator?",
-            "Which keyword is used by method to refer to the object that invoked it?",
-            "Which of these keywords is used to define interfaces in Java?",
-            "Which of these access specifiers can be used for an interface?",
-            "Which of the following is correct way of importing an entire package ‘pkg’?",
-            "What is the return type of Constructors?",
-            "Which of the following package stores all the standard java classes?",
-            "Which of these method of class String is used to compare two String objects for their equality?",
-            "An expression involving byte, int, & literal numbers is promoted to which of these?",
+    String[] questions = {
+            "Which letters of \"Halqiyah\" originate sound from Middle of Throat?",
+            "Pair of letters included in \"Halqiyah\"?",
+            "Word ق from \"Lahatiyah\" generates sound from which part of tongue?",
+            "Pair of letters \" ض ج ش ی \" are part of which \"makhārij al-ḥurūf\"?",
+            "Rounded tip of the tongue touching the base of the frontal 6 teeth can produce sound of which letter?",
+            "Tip of the tongue comes between the front top and bottom teeth produce sound of which pair?",
+            "How \"Ghunna\" sounds are produced?",
+            "How many emission points (makhārij al-ḥurūf) are located in human skeleton/face?",
+            "Pair of letters \"ت د ط \" are part of which \"makhārij al-ḥurūf\"?",
+            "What will happen if you block/press your nose completely?",
     };
-    String[] anwsers ={"main method","<=","this","interface","public","import pkg.*","None of the mentioned","java","equals()","int"
+    String[] anwsers ={
+            "ن",
+            "Shajariyah-Haafiyah",
+            "Base of tongue near Uvula",
+            "غ خ",
+            "ع ح",
+            "ص ز س",
+            "When noise vibrates while emitting letters",
+            "17",
+            "Nit-eeyah",
+            "None of these",
     };
     String[] options ={"finalize method","main method","static method","private method",
             "&","&=","|=","<=",
