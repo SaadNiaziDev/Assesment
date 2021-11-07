@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ProceedBtn = findViewById(R.id.proceedBtn);
-        reviseBtn=findViewById(R.id.rewiseBtn);
+        reviseBtn=findViewById(R.id.reviseBtn);
         EditText name = findViewById(R.id.nameInput);
         EditText rollNum = findViewById(R.id.rollNumberInput);
         ProceedBtn.setOnClickListener(v -> {

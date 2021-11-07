@@ -16,4 +16,6 @@
     <string name="shareBTN">Share</string>
     <string name="quitBTN">Quit</string>
     <string name="revise">revise</string>
+    <string name="reviseBtn">ReviseBtn</string>
+    <string name="rewise">REVISE</string>
 </resources>
