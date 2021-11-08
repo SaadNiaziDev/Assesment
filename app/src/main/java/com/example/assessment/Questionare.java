@@ -2,6 +2,7 @@ package com.example.assessment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -49,17 +50,19 @@ public class Questionare extends AppCompatActivity {
             "Lahatiyah", "Nit-eeyah", "Shajariyah-Haafiyah", "Halqiyah",
             "Shrill sound", "No Sound", "Grave sound" , "None of these"
     };
-    public static int marks=0,correct=0,wrong=0;
-    TextView name_msg,roll_msg;
+    public static int correct=0,wrong=0;
+    TextView name_msg,roll_msg,count;
     static int counter=0;
     Button submitBtn,quitBtn;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questionare);
         name_msg = findViewById(R.id.name_display);
         roll_msg = findViewById(R.id.roll_display);
+        count=findViewById(R.id.counterView);
         Intent intent = getIntent();
         String str = intent.getStringExtra("Name");
         name_msg.setText(str);
@@ -103,10 +106,10 @@ public class Questionare extends AppCompatActivity {
         r2.setText(options[counter*4 +1]);
         r3.setText(options[counter*4 +2]);
         r4.setText(options[counter*4 +3]);
+        count.setText(counter+ "/10");
     }
     else
     {
-        marks=correct;
         Intent in = new Intent(getApplicationContext(),Result.class);
         startActivity(in);
     }
@@ -123,9 +126,7 @@ public class Questionare extends AppCompatActivity {
             intent1.putExtra("Correct++",data4);
             intent1.putExtra("Wrong++",data5);
             startActivity(intent1);}
-            else
-            {}
-    radioGroup.clearCheck();
+            radioGroup.clearCheck();
     });
 
         quitBtn.setOnClickListener(v -> {
