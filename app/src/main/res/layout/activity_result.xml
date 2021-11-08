@@ -20,27 +20,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/attemptedText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="200dp"
-        android:text="@string/questionAttempted"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
-
-    <TextView
         android:id="@+id/wrongText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginBottom="288dp"
+        android:layout_marginTop="40dp"
         android:text="@string/wrongAnwsers"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/correctText"
+        app:layout_constraintTop_toBottomOf="@+id/correctText"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -48,12 +35,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
+        android:layout_marginTop="200dp"
         android:text="@string/correctAnwsers"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/wrongText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attemptedText"
-        app:layout_constraintVertical_bias="0.475"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -79,15 +65,16 @@
         app:layout_constraintTop_toTopOf="@+id/wrongText" />
 
     <TextView
-        android:id="@+id/attemptedInput"
-        android:layout_width="73dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="50dp"
-        android:textSize="24sp"
+        android:id="@+id/score"
+        android:layout_width="157dp"
+        android:layout_height="121dp"
+        android:layout_marginBottom="36dp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/shareBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/attemptedText"
-        app:layout_constraintTop_toTopOf="@+id/attemptedText" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/resultTitle"

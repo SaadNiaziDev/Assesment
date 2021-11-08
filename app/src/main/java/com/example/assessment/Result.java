@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class Result extends AppCompatActivity {
     TextView _name,_rollNum;
     Button quitButton, shareButton;
-    TextView attemptedField,correctField,wrongField;
+    TextView scoreField,correctField,wrongField;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +20,7 @@ public class Result extends AppCompatActivity {
         _rollNum=findViewById(R.id.rollText);
         quitButton=findViewById(R.id.quitButton);
         shareButton=findViewById(R.id.shareBtn);
-        attemptedField=findViewById(R.id.attemptedInput);
+        scoreField=findViewById(R.id.score);
         wrongField=findViewById(R.id.wrongInput);
         correctField=findViewById(R.id.correctInput);
 
@@ -29,10 +29,9 @@ public class Result extends AppCompatActivity {
         _name.setText(text1);
         String text2 = GET.getStringExtra("Roll#");
         _rollNum.setText(text2);
-        String text3 = GET.getStringExtra("Counter++");
-        attemptedField.setText(text3);
         String text4 = GET.getStringExtra("Correct++");
         correctField.setText(text4);
+        scoreField.setText(text4+'0');
         String text5 = GET.getStringExtra("Wrong++");
         wrongField.setText(text5);
 
